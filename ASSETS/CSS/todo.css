@@ -1,0 +1,190 @@
+
+BODY{
+  background: #77A1D3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E684AE, #79CBCA, #77A1D3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-image: url("pattern-26442_1280.png");
+-webkit-transition-property: background-image 3000ms ease-in 3000ms;
+-moz-transition-property: background-image 3000ms ease-in 3000ms;
+-o-transition-property: background-image 3000ms ease-in 3000ms;
+transition: background-image 3000ms ease-in 3000ms;
+}
+h1{
+  background-color: #cc6979;
+  color: white;
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  box-sizing: border-box;
+  font-family: baloo bhaijaan;
+  text-align: center;
+}
+#main{
+width: 360px;
+margin: 100px auto;
+display: block;
+background-color: #f7f7f7;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+ul{
+  list-style: none;
+  font-family: amatic sc;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 0;
+}
+li{
+  background-color: white;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+li:nth-child(2n){
+  background-color: #f7f7f7;
+}
+
+input{
+  font-size: 18px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  color: #2980b9;
+  border: none;
+}
+input:focus{
+  background-color: #fff;
+  border:#2980b9;
+  outline: none;
+  box-sizing: border-box;
+}
+span{
+  color: #cc7979;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+
+}
+
+
+li:hover span{
+  width: 40px;
+  opacity: 1;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 3000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 3000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 3000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+
+}
+.completed{
+
+    color: #cc7979;
+    text-decoration: line-through
+}
+.fa-plus-circle{
+  float: right;
+}
+.fa-plus-circle:hover{
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+.fa-refresh{
+  text-align: center;
+  float: left;
+  color: white;
+  background: none;
+}
+.fa-refresh:hover{
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  box-shadow: 0px 0px 50px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+
+  font-size: 20px;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
